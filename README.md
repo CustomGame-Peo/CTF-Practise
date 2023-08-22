@@ -1,6 +1,6 @@
 # CTF-Pratics
 
-基于foundry实现的ctf测试环境。\n
+基于foundry实现的contract测试环境。
 
 ## 目前完成的CTF
 
