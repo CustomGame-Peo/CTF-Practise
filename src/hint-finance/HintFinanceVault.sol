@@ -30,10 +30,10 @@ contract HintFinanceVault {
     /* ========== STATE VARIABLES ========== */
 
     struct Reward {
-        uint256 rewardsDuration;
+        uint256 rewardsDuration; // 时间
         uint256 periodFinish;
-        uint256 rewardRate;
-        uint256 lastUpdateTime;
+        uint256 rewardRate; // 每过一天能收获的奖励token
+        uint256 lastUpdateTime; // 最后更新时间
         uint256 rewardPerTokenStored;
     }
 

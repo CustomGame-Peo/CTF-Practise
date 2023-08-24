@@ -19,7 +19,7 @@ contract SetupTest is Test {
     SetupFinance public stp;
 
     function setUp() public {
-        stp = new SetupFinance{value: 50 ether}();
+        stp = new SetupFinance{value: 30 ether}();
     }
 
     function test_GetFlag() public {
