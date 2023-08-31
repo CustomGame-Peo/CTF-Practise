@@ -89,6 +89,10 @@ Starting with 1 ETH in balance, pass the challenge by taking all ETH from the po
 从余额 1 ETH 开始，通过从池中取出所有 ETH 来通过挑战。
 
 
+
+### solved
+
+
 # Challenge #5 - The Rewarder  
 挑战 #5 - 奖励者
 
@@ -120,6 +124,7 @@ What could go wrong, right ?
 You start with no DVT tokens in balance, and the pool has 1.5 million. Your goal is to take them all.  
 一开始没有余额的 DVT 代币，池中有 150 万枚。你的目标是把它们全部拿走。
 
+### solved
 
 鲸鱼攻击：攻击者持有大量某个token，用于控制合约。
 
@@ -167,6 +172,10 @@ There’s a DVT market opened in an old [Uniswap v1 exchange](https://docs.unis
 Pass the challenge by taking all tokens from the lending pool. You start with 25 ETH and 1000 DVTs in balance.  
 通过从借贷池中取出所有代币来通过挑战。您一开始有 25 个 ETH 和 1000 个 DVT 余额。
 
+
+
+### solved
+
 这道题问题主要出现在池中的价格是根据uniswap池中的两个代币的商进行计算的，所以而我们手中掌握的token是可以控制unniswap池里的价格的，所以首先将DVT token全部转入池中，就可以让eth的价格迅速升高，1000个DVT可以用几乎20个eth就可以全部兑换出抵押池里的物品。
 
 # Challenge #9 - Puppet V2  
@@ -199,6 +208,7 @@ You’ve agreed to help. Although, you only have 0.1 ETH in balance. The devs ju
 If only you could get free ETH, at least for an instant.  
 如果你能获得免费的 ETH 就好了，至少是暂时的。
 
+### solved
 
 这道题问题出现在buyMany，不过需要先看buyOne，这个函数在买入nft时，会先比较msg.value是否大于等于priceToPay，满足条件就可以买入，但是buyMany是循环执行buyOne的，也就是说我们只要付1次的钱，便可以把所有的nft全部取出来。但是我们首先要有第一次付款的金额，这个我们应该如何来呢？答案是unswap闪电贷款，FreeRiderRecovery合约，这个合约可以让我们出售前5个nft之一时，获取45 ether的金额，但只有一次。
 
