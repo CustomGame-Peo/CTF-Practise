@@ -1,7 +1,9 @@
 # Compiler files
 cache/
 out/
-
+./DS_Store
+.gitignore
+.gitmodules
 # Ignores development broadcast logs
 !/broadcast
 /broadcast/*/31337/
